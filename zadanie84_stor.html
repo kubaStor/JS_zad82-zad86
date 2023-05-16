@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <title> Zadanie 84 Stormowski </title>
+    </head>
+    <body>
+        <script>
+            dzis_stor = new Date();
+            document.write("<br> Aktualny czas : ",dzis_stor.getHours(),":",dzis_stor.getMinutes());
+        </script>
+        <table border="1cm">
+            <tr><p id="pokaz1">0.00</p></tr>
+        </table>
+        <input type="button" name="Button1" value="START stoper" onclick="stormowski_start()">
+        <input type="button" name="Button1" value="STOP stoper" onclick="stormowski_stop()">
+        <script>
+            var pokaz1 = document.getElementById("pokaz1");
+            var start_stor;
+            var poczatek_stor;
+            var stop_stor;
+            var koniec_stor;
+            var roznica_stor;
+            function stormowski_start() 
+            {
+                start_stor = new Date();
+                poczatek_stor = start_stor.getTime()
+            }
+            function stormowski_stop() 
+            {
+                stop_stor = new Date();
+                koniec_stor = stop_stor.getTime()
+                roznica_stor = koniec_stor - poczatek_stor;
+                pokaz1.innerHTML = roznica_stor/1000+" s";
+            }
+        </script>
+        <table border="1cm">
+            <tr id="pokaz1"></tr>
+        </table>
+    </body>
+</html>
+<!--Stormowski 3F_2-->

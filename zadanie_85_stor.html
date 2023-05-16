@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <title> Zadanie 85 Stormowski</title>
+        <script type="text/javascript">
+            function dzientyg()
+            {
+                var dzis = new Date();
+                var dzientygodnia = dzis.getDay();
+                switch (dzientygodnia) {
+                    case 0:
+                    document.write("Dzisiaj jest niedziela.");
+                    break;
+                    case 1:
+                    document.write("Dzisiaj jest poniedziałek.");
+                    break;
+                    case 2:
+                    document.write("Dzisiaj jest wtorek.");
+                    break;
+                    case 3:
+                    document.write("Dzisiaj jest środa.");
+                    break;
+                    case 4:
+                    document.write("Dzisiaj jest czwartek.");
+                    break;
+                    case 5:
+                    document.write("Dzisiaj jest piątek.");
+                    break;
+                    case 6:
+                    document.write("Dzisiaj jest sobota.");
+                    break;
+                    default:
+                    document.write("!!! Błąd dczytu !!!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+           dzientyg();
+        </script>
+    </body>
+</html>
+<!--Stormowski 3F_2-->
