@@ -1,0 +1,36 @@
+<textarea cols="120" rows="38" scrolling="no" readonly> 
+    <!DOCTYPE html>
+    <head>
+        <title> Zadanie 82 Stormowski </title>
+        <script language="JavaScript">
+            function pushbutton() 
+            {
+                alert("Czesc !");
+            }
+        </script>
+    </head>
+    <body>
+        <h1><span style="color: red">Jakub Stmowski</span></h1>
+        <div style="color:green">
+            <h2>dzis = new Date() ->Przypisanie zmiennej dzis aktualnej daty</h2>
+            <h2>dzis = dzis.GetHours ->Przypisanie zmiennej dzis aktualnej godziny</h2>
+            <h2>dzis = dzis.GetMinutes ->Przypisanie zmiennej dzis aktualnej minuty</h2>
+            <h2>dzis = dzis.GetMonths ->Przypisanie zmiennej dzis aktualngo miesiąca/p>
+            <h2>dzis = dzis.GetDate ->Przypisanie zmiennej dzis aktualnej daty</h2>
+            <h2>dzis = dzis.GetFullYear ->Przypisanie zmiennej dzis aktualnrgo roku</h2>
+        </div>
+        <script language="LiveScript">
+            document.write(document.lastModified,"<br>")
+        </script>
+        <form>
+            <input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+        </form>
+        <script language="JavaScript">
+            dzis = new Date()
+            document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+            document.write("<br>Aktualna data : ",dzis.getMonth()+1,",",dzis.getDate(),",",dzis.getFullYear());
+        </script>
+    </body>
+</html>
+<!--Stormowski 3F_2-->
+</textarea>

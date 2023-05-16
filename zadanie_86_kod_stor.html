@@ -1,0 +1,49 @@
+<textarea cols="120" rows="38" scrolling="no" readonly>
+    <!DOCTYPE html>
+    <head>
+        <title> Zadanie 85 Stormowski </title>
+    </head>
+    <body>
+        <p id="data">  </p>
+        <p id="godz">  </p>
+        <p id="mod">   </p>
+    </body>
+    <script>
+        var data = new Date();
+        function przycisk1_stor()
+        {
+            document.getElementById("mod").innerHTML = "Ostatnio zmodyfikowany : "+document.lastModified;        
+        }
+        function przycisk2_stor()
+        { 
+            document.getElementById("godz").innerHTML="Aktualna godzina : "+data.getHours()+":"+data.getMinutes();
+        }
+        function przycisk3_stor()
+        {
+            document.getElementById("data").innerHTML="Aktualna data : "+(data.getMonth()+1)+"."+(data.getDate())+"."+(data.getFullYear());          
+        }
+    </script>
+    <form>
+        <a onclick="przycisk1_stor(' ')"> <img src="przycisk1_stor.jpg" alt="Modyfikacja" border="0" 
+        onmouseover="this.src = 'przycisk1nacis_stor.jpg'" onmouseout="this.src ='przycisk1_stor.jpg'" /> </a>
+    </form>
+    <table>
+        <tr id="przycisk_stor1"></tr>
+    </table>
+    <form>
+        <a onclick="przycisk2_stor(' ')"> <img src="przycisk2_stor.jpg" alt="Godzina" border="0" 
+        onmouseover="this.src = 'przycisk2nacis_stor.jpg'" onmouseout="this.src ='przycisk2_stor.jpg'" /> </a>
+    </form>
+    <table>
+        <tr id="przycisk2_stor"></tr>
+    </table>
+    <form>
+        <a onclick="przycisk3_stor(' ')"> <img src="przycisk3_stor.jpg" alt="Data" border="0" 
+        onmouseover="this.src = 'przycisk3nacis_stor.jpg'" onmouseout="this.src ='przycisk3_stor.jpg'" /> </a>
+    </form>
+    <table>
+        <tr id="przycisk3_stor"></tr>
+    </table>
+</html>
+<!--Stormowski 3F_2-->
+</textarea>
